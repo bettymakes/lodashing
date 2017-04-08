@@ -1,0 +1,11 @@
+{
+  "name": "lodashing",
+  "version": "1.0.0",
+  "description": "JS Exercise Project",
+  "main": "index.js",
+  "author": "betty <makewithbetty@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
+}
