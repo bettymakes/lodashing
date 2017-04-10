@@ -22,14 +22,13 @@
 // Sandbox
 // =============================================================================
 function chunk(arr, size = 1) {
-  // Verify size is not smaller than 0
+  if ((!Array.isArray(arr) && typeof arr !== 'string') || size < 1) return [];
+  if (typeof arr === 'string') { arr = arr.split(''); }
 
   let result = [];
-
   while(arr.length > 0) {
     result.push(arr.splice(0, size));
   }
-
 
   return result;
 }
